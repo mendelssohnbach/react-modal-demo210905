@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import Modal from './components/Modal';
 
-function App() {
+const App = () => {
   const [openModal, setOpenModal] = useState(false);
 
   return (
@@ -14,6 +14,6 @@ function App() {
       {openModal && <Modal closeModal={setOpenModal} />}
     </div>
   );
-}
+};
 
 export default App;
