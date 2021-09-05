@@ -1,8 +1,12 @@
+import './modal.css';
+
 const Modal = ({ closeModal }) => {
   return (
     <div className="modalBackground">
       <div className="modalContainer">
-        <button onClick={() => closeModal(false)}> X </button>
+        <div className="titleCloseBtn">
+          <button onClick={() => closeModal(false)}> X </button>
+        </div>
         <div className="title">
           <h1>続行してもよろしいですか？</h1>
         </div>
@@ -10,7 +14,9 @@ const Modal = ({ closeModal }) => {
           <p>次のページがすごいことになっています。行ってみたくなりましたか？</p>
         </div>
         <div className="footer">
-          <button onClick={() => closeModal(false)}>中止</button>
+          <button onClick={() => closeModal(false)} id="cancelBtn">
+            中止
+          </button>
           <button>続ける</button>
         </div>
       </div>
