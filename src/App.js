@@ -11,7 +11,7 @@ function App() {
       <button className="openModalBtn" onClick={() => setOpenModal(true)}>
         Open
       </button>
-      {openModal && <Modal />}
+      {openModal && <Modal closeModal={setOpenModal} />}
     </div>
   );
 }
