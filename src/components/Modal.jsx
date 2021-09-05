@@ -1,4 +1,4 @@
-const Modal = () => {
+const Modal = ({ closeModal }) => {
   return (
     <div className="modalBackground">
       <div className="modalContainer">
